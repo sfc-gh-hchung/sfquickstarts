@@ -112,8 +112,24 @@ jupyter notebook
 ## Need a title for this section
 Duration: 2
 
+### Objective 
+- Causal inference is a machine learning technique to identify and control for confounding variables that might influence both the advertisement and sales. In this solution a brand connects its customer list including sales information to impressions on the ad platform/publisher using a Data Cleanroom. The brand builds machine learning models to measure the impact of a campaign on its sales. These models are built using attributes that are available to the advertiser, such as demographic information and browsing behavior. The brand also uses the models to score consumers based on their likelihood to be influenced by the campaign. 
+
 ### Solution Architecture
 <img src="assets/solution.png">
+
+### Use Case Flow
+1. Ad impressions for subscribers and Sales data for customers is joined in a Snowflake Data Clean Room (optional).
+2. Identify and control for confounding variables without requiring a RCT (randomized controlled trial).
+3. Causallib package to perform causal inference, control for confounding variables (marital status, age) and to quantify sales lift 
+4. A trained model to predict purchasing is saved as a model object within snowflake and called via a UDF in Snowpark to calculate a score for new consumers. 
+5. Data scientist can interact with Jupyter notebook and view application via Streamlit
+6. Leverage key supporting functions including role based access control, masking and replication in addition to workload isolation and instant scaling.
+
+### Related Content
+Solution page: [CAUSAL INFERENCE FOR SALES LIFT] (https://www.snowflake.com/en/resources/technical/ad-campaign-effectiveness-sales-lift/) 
+Youtube: [Optimize Your Ad Campaigns In Snowpark] (https://www.youtube.com/watch?v=Lva9klc3zu0)
+
 
 ### Causal Inference - Confounders, Treatment and Outcome Variables
 
