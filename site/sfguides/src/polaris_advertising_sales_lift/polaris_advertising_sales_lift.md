@@ -15,7 +15,7 @@ Duration: 1
 
 Industry solution asset for media data cloud.
 
-<img src="assets/banner.png"/>
+<img src="assets/Logo_banner_full.png"/>
 
 Blog post: [https://medium.com/snowflake/advertising-campaign-measurement-with-causal-inference-and-snowflake-data-clean-rooms-313121d8d76a](https://medium.com/snowflake/advertising-campaign-measurement-with-causal-inference-and-snowflake-data-clean-rooms-313121d8d76a)
 
@@ -43,7 +43,7 @@ The brand connects its customer list to impressions on the ad platform/publisher
 ## Set up - Snowpark Python
 Duration: 2
 ### Overview
-Susan writing here
+<!-- --------Susan writing here--------- -->
 
 - The [polaris_advertising_sales_lift.ipynb](https://github.com/Snowflake-Labs/advertising-measurement-causal-analysis-Notebook/notebook/ML_Experimentation.ipynb) notebook covers foundational feature/functions of a basic data science workflow using Snowpark for Python.
 - You will walk through the following steps as a Data Scientist tasked with building and deploying a model on Snowflake to use causal inference to calculate sales lift to measure the effectiveness of an advertising campaign.
